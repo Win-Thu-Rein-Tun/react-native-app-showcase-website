@@ -1,5 +1,6 @@
 import { Download, Features, SectionWrapper } from "./components"
 import assets from "./assets"
+import styles from "./styles/Global"
 
 const App = () => (
   <div>
@@ -29,7 +30,12 @@ const App = () => (
       mockupImg={assets.mockup}
       banner="banner02"
     />
-    <Download/>
+    <Download link="https://github.com/Win-Thu-Rein-Tun/react-native-nft-mobile-app"/>
+    <div className="px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
+        <p className={`${styles.pText} ${styles.whiteText}`}>Made with love by {" "}
+        <span className="bold">Sun D Shine</span>
+        </p>
+      </div>
   </div>
 )
 
